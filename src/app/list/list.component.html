@@ -1,0 +1,7 @@
+<div class="container py-3 border-bottom" [ngClass]="{'delete' : isDeleted}"> 
+    <div class="my-1">
+        <p class="text-white bg-gradient" [ngClass]="{'decoration-1' : isCompleted}">{{item}}</p>
+        <button class="btn btn-dark mx-3" (click)="deleteTask()"><i class="fa-solid fa-trash-arrow-up"></i></button>
+        <button class="btn btn-dark mx-3" (click)="completeTask()"><i class="fa-solid fa-check"></i></button>
+    </div>
+</div>

@@ -1,0 +1,6 @@
+<app-input (newTask)="additem($event)"></app-input>
+<div class="container bg-primary ">
+    <app-list *ngFor="let item of items" [item]="item"></app-list>
+</div>
+
+<!-- (completed)="addClass($event)" -->

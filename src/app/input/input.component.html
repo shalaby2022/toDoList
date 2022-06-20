@@ -1,0 +1,10 @@
+<div class="container bg-dark py-2 mt-2">
+    <div>
+        <h1 class="fw-bolder fs-1 text-white text-end">To-Do-App!</h1>
+        <p class="fw-bolder fs-6 text-white text-end">Add New To-Do</p>
+    </div>
+    <form class="my-3 d-flex align-items-center">
+        <input #newTask class="form-control w-75" type="text" placeholder="Enter new Task">
+        <button class="btn btn-primary mx-1 my-3 w-25" (click)="addTask(newTask.value)">Add</button>
+    </form>
+</div>
